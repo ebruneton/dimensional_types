@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dimensional_types" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="output/Debug/dimensional_types" prefix_auto="1" extension_auto="1" />
+				<Option object_output="output/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="output/Release/dimensional_types" prefix_auto="1" extension_auto="1" />
+				<Option object_output="output/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wmain" />
+			<Add option="-pedantic-errors" />
+			<Add option="-pedantic" />
+			<Add option="-Wall" />
+			<Add option="-std=c++11" />
+		</Compiler>
+		<Unit filename="Makefile" />
+		<Unit filename="math/angle.h" />
+		<Unit filename="math/angle_test.cc" />
+		<Unit filename="math/binary_function.h" />
+		<Unit filename="math/binary_function_test.cc" />
+		<Unit filename="math/function.h" />
+		<Unit filename="math/function_test.cc" />
+		<Unit filename="math/matrix.h" />
+		<Unit filename="math/matrix_test.cc" />
+		<Unit filename="math/scalar.h" />
+		<Unit filename="math/scalar_function.h" />
+		<Unit filename="math/scalar_function_test.cc" />
+		<Unit filename="math/scalar_test.cc" />
+		<Unit filename="math/ternary_function.h" />
+		<Unit filename="math/ternary_function_test.cc" />
+		<Unit filename="math/vector.h" />
+		<Unit filename="math/vector_test.cc" />
+		<Unit filename="test/test_case.h" />
+		<Unit filename="test/test_main.cc" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
