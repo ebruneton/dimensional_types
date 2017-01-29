@@ -1,4 +1,4 @@
-# Copyright (c) 2015 Eric Bruneton
+# Copyright (c) 2016 Eric Bruneton
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -26,8 +26,8 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-GPP = g++
-GPP_FLAGS = -Wall -Wmain -pedantic -pedantic-errors -std=c++11
+GPP := g++
+GPP_FLAGS := -Wall -Wmain -pedantic -pedantic-errors -std=c++11
 
 HEADERS := $(shell find . -name "*.h")
 SOURCES := $(shell find . -name "*.cc")
@@ -48,7 +48,7 @@ output/Debug/%.o: %.cc
 
 output/Debug/test_main: $(OBJECTS)
 	mkdir -p $(@D)
-	$(GPP) -s -o $@ $^
+	$(GPP) -o $@ $^
 
 clean:
 	rm -rf output

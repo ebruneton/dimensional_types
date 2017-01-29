@@ -146,6 +146,13 @@ class TestCase {
     }
   }
 
+  void ExpectLess(double expected, double actual) {
+    if (expected >= actual) {
+      std::cout << expected << " is not less than " << actual << std::endl;
+      pass_ = false;
+    }
+  }
+
  private:
   std::string name_;
   Test test_;

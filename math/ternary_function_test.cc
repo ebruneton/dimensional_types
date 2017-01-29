@@ -130,11 +130,11 @@ class TernaryFunctionTest : public TestCase {
         }
       }
     }
-    f.Save("/tmp/dimensional_types_math_ternary_fuction_test.dat");
+    f.Save("output/Debug/ternary_fuction_test.dat");
 
     TernaryFunction<4, 8, 16, double> g(0.0);
 
-    g.Load("/tmp/dimensional_types_math_ternary_fuction_test.dat");
+    g.Load("output/Debug/ternary_fuction_test.dat");
     for (unsigned int k = 0; k < g.size_z(); ++k) {
       for (unsigned int j = 0; j < g.size_y(); ++j) {
         for (unsigned int i = 0; i < g.size_x(); ++i) {

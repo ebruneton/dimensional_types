@@ -109,11 +109,11 @@ class BinaryFunctionTest : public TestCase {
         f.Set(i, j, i + 2.0 * j);
       }
     }
-    f.Save("/tmp/dimensional_types_math_binary_fuction_test.dat");
+    f.Save("output/Debug/binary_fuction_test.dat");
 
     BinaryFunction<4, 8, double> g(0.0);
 
-    g.Load("/tmp/dimensional_types_math_binary_fuction_test.dat");
+    g.Load("output/Debug/binary_fuction_test.dat");
     for (unsigned int j = 0; j < g.size_y(); ++j) {
       for (unsigned int i = 0; i < g.size_x(); ++i) {
         ExpectEquals(i + 2.0 * j, g.Get(i, j));
