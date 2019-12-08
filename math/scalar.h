@@ -272,6 +272,7 @@ inline Number min(double x, const Number y) { return std::min(x, y()); }
 inline Number pow(const Number x, const Number y) { return std::pow(x(), y()); }
 inline Number pow(const Number x, double y) { return std::pow(x(), y); }
 inline Number pow(double x, const Number y) { return std::pow(x, y()); }
+inline Number sign(const Number x) { return x < 0.0 ? -1.0 : 1.0; }
 inline Number sqrt(const Number x) { return std::sqrt(x()); }
 
 template<int U1, int U2, int U3, int U4, int U5>

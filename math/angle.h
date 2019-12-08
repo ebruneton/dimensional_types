@@ -130,9 +130,10 @@ constexpr inline Angle asin(const Number sine) {
   return std::asin(sine()) * rad;
 }
 inline Angle atan(const Number x) { return std::atan(x()) * rad; }
-inline Angle atan2(const Number y, const Number x) {
+inline Angle atan(const Number y, const Number x) {
   return std::atan2(y(), x()) * rad;
 }
+inline Angle atan2(const Number y, const Number x) { return atan(y, x); }
 inline Number cos(const Angle angle) { return std::cos(angle.value_); }
 inline Number sin(const Angle angle) { return std::sin(angle.value_); }
 inline Number tan(const Angle angle) { return std::tan(angle.value_); }

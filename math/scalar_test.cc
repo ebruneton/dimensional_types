@@ -124,6 +124,8 @@ class ScalarTest : public TestCase {
     ExpectEquals(Number(8.0), pow(Number(2.0), Number(3.0)));
     ExpectEquals(Number(8.0), pow(Number(2.0), 3.0));
     ExpectEquals(Number(8.0), pow(2.0, Number(3.0)));
+    ExpectEquals(Number(1.0), sign(Number(4.0)));
+    ExpectEquals(Number(-1.0), sign(Number(-2.0)));
     ExpectEquals(Number(2.0), sqrt(Number(4.0)));
     ExpectEquals(2.0 * a, sqrt(4.0 * a * a));
     ExpectEquals(2.0, mod(12.0, 10.0));

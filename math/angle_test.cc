@@ -75,6 +75,7 @@ class AngleTest : public TestCase {
     ExpectEquals(std::acos(1.0), acos(Number(1.0)).to(rad));
     ExpectEquals(std::asin(1.0), asin(Number(1.0)).to(rad));
     ExpectEquals(std::atan(2.0), atan(Number(2.0)).to(rad));
+    ExpectEquals(std::atan2(1.0, 2.0), atan(Number(1.0), Number(2.0)).to(rad));
     ExpectEquals(std::atan2(1.0, 2.0), atan2(Number(1.0), Number(2.0)).to(rad));
     ExpectEquals(Number(std::cos(1.0)), cos(1.0 * rad));
     ExpectEquals(Number(std::sin(1.0)), sin(1.0 * rad));
